@@ -7,9 +7,9 @@ subtitle: <a href='https://gtl.csa.iisc.ac.in/hari/lab/'>IISc - Game Theory Lab<
 profile:
   align: right
   image: prof_pic.jpg
-  image_circular: true # crops the image to make it circular
+  image_circular: false # crops the image to make it circular
   more_info: >
-    <p>Game Theory Lab - CSA 335, 337</p>
+    <p>Game Theory Lab - CSA 335</p>
     <p>Indian Institute of Science</p>
     <p>Bengaluru, Karnataka, India</p>
 
