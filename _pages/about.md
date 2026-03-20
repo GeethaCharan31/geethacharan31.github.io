@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Researcher. Builder. Curious Mind."
+title: "Researcher. Builder. Curious Mind(er)?."
 author_profile: true
 redirect_from: 
   - /about/
