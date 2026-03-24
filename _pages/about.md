@@ -15,7 +15,7 @@ redirect_from:
 
 <!-- _I strive to understand the world, the machines and algorithms around me._ -->
 ## About Me
-I am a AI Researcher at the **Game Theory Lab, Indian Institute of Science**, where I work with Prof. Narahari on frontier models, explainability, cooperative game theory, and AI for agriculture. My work sits at a intersection bringing together the mathematical rigor of game theory and the empirical power of modern machine learning to build systems that are not just accurate, but interpretable and trustworthy.
+I am an AI Researcher at the <a href="https://gtl.csa.iisc.ac.in/hari/lab/" style="color:#4DA49C; font-weight:bold;">Game Theory Lab, Indian Institute of Science</a>, where I work with Prof. Narahari on frontier models, explainability, cooperative game theory, and AI for agriculture. My work sits at an intersection bringing together the mathematical rigor of game theory and the empirical power of modern machine learning to build systems that are not just accurate, but interpretable and trustworthy.
  
 I hold a **Master's degree in Computer Science and Automation from IISc**. My academic journey has deepened my fascination with large language models, multi-agent systems, explainable AI, and decision-making under uncertainty - problems that sit at the frontier of what intelligent systems can do and what we can understand about them.
  
