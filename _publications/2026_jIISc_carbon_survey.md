@@ -6,7 +6,7 @@ permalink: #
 excerpt: #'This paper is about the number 1. The number 2 is left for future work.'
 date: 2026-01-01
 venue: 'Journal of IISc'
-slidesurl: #'https://academicpages.github.io/files/slides1.pdf'
+slidesurl: 'https://link.springer.com/article/10.1007/s41745-026-00499-7'
 paperurl: 'https://arxiv.org/abs/2603.20674'
 bibtexurl: #'https://academicpages.github.io/files/bibtex1.bib'
 citation: 'Priyanka V, <b>Geetha Charan</b> et al.  <i>Carbon Farming: An Expository, Inter-Disciplinary Survey</i>. Journal of IISc, Special Issue on Digital Agriculture, 2026, Springer.'

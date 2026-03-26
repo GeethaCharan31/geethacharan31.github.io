@@ -29,14 +29,14 @@ author_profile: true
         {% if post.authors %}{{ post.authors }}. {% endif %}
         {% if post.venue %}<span>{{ post.venue }}</span>, {% endif %}
         {% if post.date %}<span>{{ post.date | date: "%Y" }}</span>{% endif %}
-        {% if post.paperurl %}
-          [<a href="{{ post.paperurl }}">Paper</a>]
-        {% endif %}
         {% if post.slidesurl %}
-          [<a href="{{ post.slidesurl }}">Slides</a>]
+          [<a href="{{ post.slidesurl }}">paper</a>]
         {% endif %}
         {% if post.bibtexurl %}
-          [<a href="{{ post.bibtexurl }}">BibTeX</a>]
+          [<a href="{{ post.bibtexurl }}">paper</a>]
+        {% endif %}
+        {% if post.paperurl %}
+          [<a href="{{ post.paperurl }}">arXiv</a>]
         {% endif %}
         {% if post.citation %}
           <br/><small>{{ post.citation }}</small>
