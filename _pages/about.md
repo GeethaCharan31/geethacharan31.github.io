@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Researcher. Builder. Curious Mind(er)?."
+title: "AI Researcher. Perpetually Curious"
 author_profile: true
 redirect_from: 
   - /about/
@@ -15,11 +15,11 @@ redirect_from:
 
 <!-- _I strive to understand the world, the machines and algorithms around me._ -->
 ## About Me
-I am an AI Researcher at the <a href="https://gtl.csa.iisc.ac.in/hari/lab/" style="color:#4DA49C; font-weight:bold;">Game Theory Lab, Indian Institute of Science</a>, where I work with Prof. Narahari on frontier models, explainability, cooperative game theory, and AI for agriculture. My work sits at an intersection bringing together the mathematical rigor of game theory and the empirical power of modern machine learning to build systems that are not just accurate, but interpretable and trustworthy.
+I am an AI Researcher at the <a href="https://gtl.csa.iisc.ac.in/hari/lab/" style="color:#4DA49C; font-weight:bold;">Game Theory Lab, Indian Institute of Science</a>, where I work with Prof. Narahari on frontier models, explainability, cooperative game theory, and AI for agriculture.
  
-I hold a **Master's degree in Computer Science and Automation from IISc**. My academic journey has deepened my fascination with large language models, multi-agent systems, explainable AI, and decision-making under uncertainty - problems that sit at the frontier of what intelligent systems can do and what we can understand about them.
+I hold a <strong>Master's degree in Computer Science and Automation from IISc</strong>, with a focus on large language models, function calling, multi-agent systems, deep learning, and decision-making under uncertainty.
  
-Before joining the Game Theory Lab, I was part of the **founding team at Finrep AI**, an early-stage AI startup, where I worked as an AI researcher building intelligent systems for financial compliance and accounting.
+Before joining the Game Theory Lab, I was part of the <strong>founding team at Finrep AI</strong>, an early-stage AI startup building intelligent systems for financial compliance and accounting.
 
 
 <!-- <div style="border: 1px solid #aaa; border-radius: 8px; background: #4DA49C; padding: 1em; margin: 1.5em 0;">
