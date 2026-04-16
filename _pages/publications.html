@@ -11,12 +11,30 @@ author_profile: true
 
 {% include base_path %}
 
-<!-- List all publications grouped by category if defined, as plain lists -->
+<!-- First, render 'Under Review' section for publications with 'working_title' -->
+{% assign under_review_pubs = site.publications | where_exp: "p", "p.working_title" %}
+{% if under_review_pubs.size > 0 %}
+  <h2>Under Review</h2>
+  <ul>
+  {% for post in under_review_pubs reversed %}
+    <li>
+      <strong>{{ post.title }}</strong>
+    </li>
+  {% endfor %}
+  </ul>
+  <hr/>
+{% endif %}
+
+<!-- Now render all other publications as before, but skip those with 'working_title' -->
+{% assign other_pubs = site.publications | reject: "working_title", nil %}
 {% if site.publication_category %}
   {% for category in site.publication_category  %}
     {% assign title_shown = false %}
     {% for post in site.publications reversed %}
       {% if post.category != category[0] %}
+        {% continue %}
+      {% endif %}
+      {% if post.working_title %}
         {% continue %}
       {% endif %}
       {% unless title_shown %}
@@ -29,14 +47,14 @@ author_profile: true
         {% if post.authors %}{{ post.authors }}. {% endif %}
         {% if post.venue %}<span>{{ post.venue }}</span>, {% endif %}
         {% if post.date %}<span>{{ post.date | date: "%Y" }}</span>{% endif %}
+        {% if post.paperurl %}
+          [<a href="{{ post.paperurl }}">Paper</a>]
+        {% endif %}
         {% if post.slidesurl %}
-          [<a href="{{ post.slidesurl }}">paper</a>]
+          [<a href="{{ post.slidesurl }}">Slides</a>]
         {% endif %}
         {% if post.bibtexurl %}
-          [<a href="{{ post.bibtexurl }}">paper</a>]
-        {% endif %}
-        {% if post.paperurl %}
-          [<a href="{{ post.paperurl }}">arXiv</a>]
+          [<a href="{{ post.bibtexurl }}">BibTeX</a>]
         {% endif %}
         {% if post.citation %}
           <br/><small>{{ post.citation }}</small>
@@ -60,6 +78,9 @@ author_profile: true
 {% else %}
   <ul>
   {% for post in site.publications reversed %}
+    {% if post.working_title %}
+      {% continue %}
+    {% endif %}
     <li>
       <strong>{{ post.title }}</strong><br/>
       {% if post.authors %}{{ post.authors }}. {% endif %}
