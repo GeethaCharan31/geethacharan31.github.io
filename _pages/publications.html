@@ -16,11 +16,13 @@ author_profile: true
   {% assign under_review_pubs = site.publications | where_exp: "p", "p.working_title" %}
   {% if under_review_pubs.size > 0 %}
     <h2 style="margin-top: 0; color: #fff;">Under Review</h2>
-    {% for post in under_review_pubs reversed %}
-      <li>
-        <strong style="color:#fff;">{{ post.working_title }}</strong>
-      </li>
-    {% endfor %}
+    <ul style="padding-left: 2em;">
+      {% for post in under_review_pubs reversed %}
+        <li>
+          <span style="color:#fff;">{{ post.working_title }}</span>
+        </li>
+      {% endfor %}
+    </ul>
   {% endif %}
 </div>
 
