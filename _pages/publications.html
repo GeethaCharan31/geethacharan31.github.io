@@ -11,19 +11,16 @@ author_profile: true
 
 {% include base_path %}
 
-<!-- First, render 'Under Review' section for publications with 'working_title', wrapped in a custom teal (#4DA49C) box -->
-<div style="border-left: 6px solid #4DA49C; background: #e6f7fa; padding: 1em 1.5em; margin-bottom: 1.5em;">
+<!-- Render 'Under Review' publications inside a custom rounded teal box consistent with about.md -->
+<div style="border: 1px solid #aaa; border-radius: 8px; background: #4DA49C; padding: 1em; margin: 1.5em 0;">
   {% assign under_review_pubs = site.publications | where_exp: "p", "p.working_title" %}
   {% if under_review_pubs.size > 0 %}
-    <h2>Under Review</h2>
-    <ul>
+    <h2 style="margin-top: 0; color: #fff;">Under Review</h2>
     {% for post in under_review_pubs reversed %}
       <li>
-        <strong>{{ post.working_title }}</strong>
+        <strong style="color:#fff;">{{ post.working_title }}</strong>
       </li>
     {% endfor %}
-    </ul>
-    <hr/>
   {% endif %}
 </div>
 
@@ -53,7 +50,7 @@ author_profile: true
           [<a href="{{ post.paperurl }}">Paper</a>]
         {% endif %}
         {% if post.slidesurl %}
-          [<a href="{{ post.slidesurl }}">Slides</a>]
+          [<a href="{{ post.slidesurl }}">arXiv</a>]
         {% endif %}
         {% if post.bibtexurl %}
           [<a href="{{ post.bibtexurl }}">BibTeX</a>]
