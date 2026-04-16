@@ -15,11 +15,11 @@ author_profile: true
 <div style="border: 1px solid #aaa; border-radius: 8px; background: #4DA49C; padding: 1em; margin: 1.5em 0;">
   {% assign under_review_pubs = site.publications | where_exp: "p", "p.working_title" %}
   {% if under_review_pubs.size > 0 %}
-    <h2 style="margin-top: 0; color: #fff;">Under Review</h2>
+    <h2 style="margin-top: 0">Under Review</h2>
     <ul style="padding-left: 2em;">
       {% for post in under_review_pubs reversed %}
         <li>
-          <span style="color:#fff;">{{ post.working_title }}</span>
+          <span>{{ post.working_title }}</span>
         </li>
       {% endfor %}
     </ul>
