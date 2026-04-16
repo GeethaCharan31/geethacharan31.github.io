@@ -11,19 +11,21 @@ author_profile: true
 
 {% include base_path %}
 
-<!-- First, render 'Under Review' section for publications with 'working_title' -->
-{% assign under_review_pubs = site.publications | where_exp: "p", "p.working_title" %}
-{% if under_review_pubs.size > 0 %}
-  <h2>Under Review</h2>
-  <ul>
-  {% for post in under_review_pubs reversed %}
-    <li>
-      <strong>{{ post.title }}</strong>
-    </li>
-  {% endfor %}
-  </ul>
-  <hr/>
-{% endif %}
+<!-- First, render 'Under Review' section for publications with 'working_title', wrapped in a custom teal (#4DA49C) box -->
+<div style="border-left: 6px solid #4DA49C; background: #e6f7fa; padding: 1em 1.5em; margin-bottom: 1.5em;">
+  {% assign under_review_pubs = site.publications | where_exp: "p", "p.working_title" %}
+  {% if under_review_pubs.size > 0 %}
+    <h2>Under Review</h2>
+    <ul>
+    {% for post in under_review_pubs reversed %}
+      <li>
+        <strong>{{ post.working_title }}</strong>
+      </li>
+    {% endfor %}
+    </ul>
+    <hr/>
+  {% endif %}
+</div>
 
 <!-- Now render all other publications as before, but skip those with 'working_title' -->
 {% assign other_pubs = site.publications | reject: "working_title", nil %}
