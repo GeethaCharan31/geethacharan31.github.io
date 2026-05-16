@@ -14,9 +14,9 @@ author_profile: true
 <!-- Working Papers Box -->
 {% assign working_paper_pubs = site.publications | where: "type", "working_paper" %}
 {% if working_paper_pubs.size > 0 %}
-<div style="border: 1px solid #aaa; border-radius: 8px; background: #7B8FA1; padding: 1em; margin: 1.5em 0;">
-  <h2 style="margin-top: 0; color: #fff;">Working Papers</h2>
-  <ul style="padding-left: 2em; color: #fff;">
+<div style="border: 1px solid #b0bec5; border-radius: 8px; background: #dce8f0; padding: 1em; margin: 1.5em 0;">
+  <h2 style="margin-top: 0; color: #000;">Working Papers</h2>
+  <ul style="padding-left: 2em; color: #000;">
     {% for post in working_paper_pubs reversed %}
       <li>
         <span>{{ post.working_title | default: post.title }}</span>
@@ -29,9 +29,9 @@ author_profile: true
 <!-- Under Review Box -->
 {% assign under_review_pubs = site.publications | where: "type", "under_review" %}
 {% if under_review_pubs.size > 0 %}
-<div style="border: 1px solid #aaa; border-radius: 8px; background: #4DA49C; padding: 1em; margin: 1.5em 0;">
-  <h2 style="margin-top: 0; color: #fff;">Under Review</h2>
-  <ul style="padding-left: 2em; color: #fff;">
+<div style="border: 1px solid #80cbc4; border-radius: 8px; background: #b2dfdb; padding: 1em; margin: 1.5em 0;">
+  <h2 style="margin-top: 0; color: #000;">Under Review</h2>
+  <ul style="padding-left: 2em; color: #000;">
     {% for post in under_review_pubs reversed %}
       <li>
         <span>{{ post.working_title | default: post.title }}</span>
