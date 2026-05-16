@@ -1,6 +1,7 @@
 ---
 title: "Agri-SAGE: Simulation-Grounded Multi-Agent LLM for Context-Aware Agricultural Advisory Generation"
 working_title : "Multi Agentic LLM Architecture with Simulation Feedback"
+type : 'under_review' # under_review, working_paper , published
 collection: publications
 category: papers
 permalink: # /publication/2009-10-01-paper-title-number-1

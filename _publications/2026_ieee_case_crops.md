@@ -1,6 +1,7 @@
 ---
 title: "Advancing Crop Planning with Soil and Irrigation-Aware Optimization Across Spatial Granularities"
 working_title : "Advanced Spatial-Agnostic Crop Planning System"
+type : 'under_review' # under_review, working_paper , published
 collection: publications
 category: papers
 permalink: # /publication/2009-10-01-paper-title-number-1

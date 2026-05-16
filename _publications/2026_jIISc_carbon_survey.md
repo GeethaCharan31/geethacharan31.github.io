@@ -1,5 +1,6 @@
 ---
 title: "Carbon Farming: An Expository, Inter-Disciplinary Survey"
+type : 'published' # under_review, working_paper , published
 collection: publications
 category: papers
 permalink: #

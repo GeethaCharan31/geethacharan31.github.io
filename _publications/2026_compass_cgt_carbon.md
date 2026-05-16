@@ -1,6 +1,7 @@
 ---
 title: "A Cooperative Game Theoretic Approach to Sustainable Carbon Farming"
 working_title : "Application of Cooperative Game Theory for collectives in Carbon Farming"
+type : 'working_paper' # under_review, working_paper , published
 collection: publications
 category: papers
 permalink: # /publication/2009-10-01-paper-title-number-1

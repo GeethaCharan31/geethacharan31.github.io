@@ -11,33 +11,44 @@ author_profile: true
 
 {% include base_path %}
 
-<!-- Render 'Under Review' publications inside a custom rounded teal box consistent with about.md -->
-<div style="border: 1px solid #aaa; border-radius: 8px; background: #4DA49C; padding: 1em; margin: 1.5em 0;">
-  {% assign under_review_pubs = site.publications | where_exp: "p", "p.working_title" %}
-  {% if under_review_pubs.size > 0 %}
-    <h2 style="margin-top: 0">Under Review</h2>
-    <ul style="padding-left: 2em;">
-      {% for post in under_review_pubs reversed %}
-        <li>
-          <span>{{ post.working_title }}</span>
-        </li>
-      {% endfor %}
-    </ul>
-  {% endif %}
+<!-- Working Papers Box -->
+{% assign working_paper_pubs = site.publications | where: "type", "working_paper" %}
+{% if working_paper_pubs.size > 0 %}
+<div style="border: 1px solid #aaa; border-radius: 8px; background: #7B8FA1; padding: 1em; margin: 1.5em 0;">
+  <h2 style="margin-top: 0; color: #fff;">Working Papers</h2>
+  <ul style="padding-left: 2em; color: #fff;">
+    {% for post in working_paper_pubs reversed %}
+      <li>
+        <span>{{ post.working_title | default: post.title }}</span>
+      </li>
+    {% endfor %}
+  </ul>
 </div>
+{% endif %}
 
-<!-- Now render all other publications as before, but skip those with 'working_title' -->
-{% assign other_pubs = site.publications | reject: "working_title", nil %}
+<!-- Under Review Box -->
+{% assign under_review_pubs = site.publications | where: "type", "under_review" %}
+{% if under_review_pubs.size > 0 %}
+<div style="border: 1px solid #aaa; border-radius: 8px; background: #4DA49C; padding: 1em; margin: 1.5em 0;">
+  <h2 style="margin-top: 0; color: #fff;">Under Review</h2>
+  <ul style="padding-left: 2em; color: #fff;">
+    {% for post in under_review_pubs reversed %}
+      <li>
+        <span>{{ post.working_title | default: post.title }}</span>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
+{% endif %}
+
+<!-- Published Papers -->
 {% if site.publication_category %}
-  {% for category in site.publication_category  %}
+  {% for category in site.publication_category %}
     {% assign title_shown = false %}
+    {% assign has_more = false %}
     {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% if post.working_title %}
-        {% continue %}
-      {% endif %}
+      {% if post.category != category[0] %}{% continue %}{% endif %}
+      {% if post.type == "under_review" or post.type == "working_paper" %}{% continue %}{% endif %}
       {% unless title_shown %}
         <h2>{{ category[1].title }}</h2><hr />
         <ul>
@@ -48,18 +59,10 @@ author_profile: true
         {% if post.authors %}{{ post.authors }}. {% endif %}
         {% if post.venue %}<span>{{ post.venue }}</span>, {% endif %}
         {% if post.date %}<span>{{ post.date | date: "%Y" }}</span>{% endif %}
-        {% if post.paperurl %}
-          [<a href="{{ post.paperurl }}">Paper</a>]
-        {% endif %}
-        {% if post.slidesurl %}
-          [<a href="{{ post.slidesurl }}">arXiv</a>]
-        {% endif %}
-        {% if post.bibtexurl %}
-          [<a href="{{ post.bibtexurl }}">BibTeX</a>]
-        {% endif %}
-        {% if post.citation %}
-          <br/><small>{{ post.citation }}</small>
-        {% endif %}
+        {% if post.paperurl %}[<a href="{{ post.paperurl }}">Paper</a>]{% endif %}
+        {% if post.slidesurl %}[<a href="{{ post.slidesurl }}">arXiv</a>]{% endif %}
+        {% if post.bibtexurl %}[<a href="{{ post.bibtexurl }}">BibTeX</a>]{% endif %}
+        {% if post.citation %}<br/><small>{{ post.citation }}</small>{% endif %}
       </li>
       {% assign next_post = false %}
       {% for next_post_loop in site.publications reversed %}
@@ -79,26 +82,16 @@ author_profile: true
 {% else %}
   <ul>
   {% for post in site.publications reversed %}
-    {% if post.working_title %}
-      {% continue %}
-    {% endif %}
+    {% if post.type == "under_review" or post.type == "working_paper" %}{% continue %}{% endif %}
     <li>
       <strong>{{ post.title }}</strong><br/>
       {% if post.authors %}{{ post.authors }}. {% endif %}
       {% if post.venue %}<span>{{ post.venue }}</span>, {% endif %}
       {% if post.date %}<span>{{ post.date | date: "%Y" }}</span>{% endif %}
-      {% if post.paperurl %}
-        [<a href="{{ post.paperurl }}">Paper</a>]
-      {% endif %}
-      {% if post.slidesurl %}
-        [<a href="{{ post.slidesurl }}">Slides</a>]
-      {% endif %}
-      {% if post.bibtexurl %}
-        [<a href="{{ post.bibtexurl }}">BibTeX</a>]
-      {% endif %}
-      {% if post.citation %}
-        <br/><small>{{ post.citation }}</small>
-      {% endif %}
+      {% if post.paperurl %}[<a href="{{ post.paperurl }}">Paper</a>]{% endif %}
+      {% if post.slidesurl %}[<a href="{{ post.slidesurl }}">Slides</a>]{% endif %}
+      {% if post.bibtexurl %}[<a href="{{ post.bibtexurl }}">BibTeX</a>]{% endif %}
+      {% if post.citation %}<br/><small>{{ post.citation }}</small>{% endif %}
     </li>
   {% endfor %}
   </ul>
