@@ -20,23 +20,23 @@ I am an AI Researcher at the <a href="https://gtl.csa.iisc.ac.in/hari/lab/" styl
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px; margin-bottom: 2em;">
 
   <div style="background: #fff; border: 1px solid #e0e0e0; border-radius: 10px; padding: 1rem 1.25rem; border-left: 3px solid #4DA49C;">
-    <div style="font-size: 15px; font-weight: 600; color: #222; margin-bottom: 5px;">🧠 Frontier Models</div>
-    <div style="font-size: 13px; color: #555; line-height: 1.6;">Pre-training, fine-tuning, alignment, and understanding LLM behavior in game-theoretic settings</div>
+    <div style="font-size: 15px; font-weight: 600; color: #222; margin-bottom: 5px;">Frontier Models</div>
+    <div style="font-size: 13px; color: #555; line-height: 1.6;">Pre-training, Fine-tuning, Alignment, and Behavioural Assessment</div>
   </div>
 
   <div style="background: #fff; border: 1px solid #e0e0e0; border-radius: 10px; padding: 1rem 1.25rem; border-left: 3px solid #4DA49C;">
-    <div style="font-size: 15px; font-weight: 600; color: #222; margin-bottom: 5px;">🎓 AI for Education</div>
-    <div style="font-size: 13px; color: #555; line-height: 1.6;">Applying AI to improve learning outcomes and broaden educational access</div>
+    <div style="font-size: 15px; font-weight: 600; color: #222; margin-bottom: 5px;">AI for Education</div>
+    <div style="font-size: 13px; color: #555; line-height: 1.6;">AI to improve learning outcomes and broaden educational access</div>
   </div>
 
   <div style="background: #fff; border: 1px solid #e0e0e0; border-radius: 10px; padding: 1rem 1.25rem; border-left: 3px solid #4DA49C;">
-    <div style="font-size: 15px; font-weight: 600; color: #222; margin-bottom: 5px;">🌾 AI for Agriculture</div>
+    <div style="font-size: 15px; font-weight: 600; color: #222; margin-bottom: 5px;">AI for Agriculture</div>
     <div style="font-size: 13px; color: #555; line-height: 1.6;">Intelligent systems for sustainable farming and agricultural decision-making</div>
   </div>
 
   <div style="background: #fff; border: 1px solid #e0e0e0; border-radius: 10px; padding: 1rem 1.25rem; border-left: 3px solid #4DA49C;">
-    <div style="font-size: 15px; font-weight: 600; color: #222; margin-bottom: 5px;">📐 Explainability via Cooperative Game Theory</div>
-    <div style="font-size: 13px; color: #555; line-height: 1.6;">Using Shapley values and coalitional frameworks to make AI decisions interpretable</div>
+    <div style="font-size: 15px; font-weight: 600; color: #222; margin-bottom: 5px;"> Explainability via Cooperative Game Theory</div>
+    <div style="font-size: 13px; color: #555; line-height: 1.6;">Coalitional frameworks and exploration of concepts to make AI decisions interpretable</div>
   </div>
 
 </div>
