@@ -1,6 +1,6 @@
 ---
 title: "A Cooperative Game Theoretic Approach to Sustainable Carbon Farming"
-working_title : "LLM Negotiation via Rubinstein Framework"
+working_title : "Bargaining and LLMs"
 type : 'working_paper' # under_review, working_paper , published
 collection: publications
 category: papers

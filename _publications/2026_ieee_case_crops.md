@@ -1,4 +1,4 @@
----
+<!-- ---
 title: "Advancing Crop Planning with Soil and Irrigation-Aware Optimization Across Spatial Granularities"
 working_title : "Advanced Spatial-Agnostic Crop Planning System"
 type : 'working_paper' # under_review, working_paper , published
@@ -12,4 +12,4 @@ slidesurl: #'https://academicpages.github.io/files/slides1.pdf'
 paperurl: #'https://academicpages.github.io/files/paper1.pdf'
 bibtexurl: #'https://academicpages.github.io/files/bibtex1.bib'
 citation: 'Priyanka V, <b>Geetha Charan</b> et al. <i>Advancing Crop Planning with Soil and Irrigation-Aware Optimization Across Spatial Granularities</i>. <i><b>(under review)</b></i>'
----
+--- -->

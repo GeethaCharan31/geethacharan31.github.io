@@ -13,7 +13,7 @@ redirect_from:
 
 ## About Me
 
-I am an AI Researcher at the <a href="https://gtl.csa.iisc.ac.in/hari/lab/" style="color:#4DA49C; font-weight:bold;">Game Theory Lab</a>, Indian Institute of Science, where I work with <a href="https://gtl.csa.iisc.ac.in/hari/" style="color:#4DA49C; font-weight:bold;">Prof. Narahari</a>. I hold a <strong>Master's degree in Computer Science and Automation from IISc</strong>, with a focus on large language models, multi-agent systems, and deep learning. I was briefly part of an AI startup building intelligent systems for financial compliance and accounting.
+I am an AI Researcher at the <a href="https://gtl.csa.iisc.ac.in/hari/lab/" style="color:#4DA49C; font-weight:bold;">Game Theory Lab</a>, Indian Institute of Science, where I work with <a href="https://gtl.csa.iisc.ac.in/hari/" style="color:#4DA49C; font-weight:bold;">Prof. Narahari</a>. I hold a <strong>Master's degree in Computer Science and Automation from IISc</strong>, with a focus on large language models, multi-agent systems, and deep learning. I was previously part of an AI startup building intelligent systems for financial compliance and accounting.
 
 <p style="font-size: 13px; font-weight: 600; color: #888; letter-spacing: 0.05em; text-transform: uppercase; margin: 2em 0 0.75em;">Research areas</p>
 
