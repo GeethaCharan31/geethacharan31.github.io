@@ -1,4 +1,4 @@
----
+<!-- ---
 title: "A Cooperative Game Theoretic Approach to Sustainable Carbon Farming"
 working_title : "Fairness and Stability in LLMs"
 type : 'working_paper' # under_review, working_paper , published
@@ -12,4 +12,4 @@ slidesurl: #'https://academicpages.github.io/files/slides1.pdf'
 paperurl: #'https://academicpages.github.io/files/paper1.pdf'
 bibtexurl: #'https://academicpages.github.io/files/bibtex1.bib'
 citation: '<b>Geetha Charan</b> et al. <i>A Cooperative Game Theoretic Approach to Sustainable Carbon Farming</i>. <i><b>(under review)</b></i>'
----
+--- -->
