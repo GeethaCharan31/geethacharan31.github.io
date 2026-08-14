@@ -9,4 +9,4 @@ redirect_from:
 
 {% include base_path %}
 
-Download the latest version of my CV **[here](/files/cv_geetha_charan.pdf)** *(Last updated: March 2026)*
+Download the latest version of my CV **[here](/files/cv_geetha_charan.pdf)** *(Last updated: July 2026)*
