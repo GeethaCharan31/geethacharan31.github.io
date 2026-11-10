@@ -9,7 +9,7 @@ excerpt: #'This paper is about the use of multi-agent LLMs grounded in simulatio
 date: 2026-10-10
 venue: 'under review'
 slidesurl: 'https://arxiv.org/abs/2611.10558'
-paperurl: 'https://drive.google.com/file/d/17vqF127_LRUODedUKqh9EkLjkTEVXVeP/view?usp=sharing'
+paperurl: #'https://drive.google.com/file/d/17vqF127_LRUODedUKqh9EkLjkTEVXVeP/view?usp=sharing'
 bibtexurl: #'https://academicpages.github.io/files/bibtex1.bib'
 citation: '<b>Geetha Charan</b> et al. <i>A Cooperative Game Theoretic Model for Sustainable, Smallholder Carbon Farming</i>. under review'
 ---
